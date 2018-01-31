@@ -2,7 +2,6 @@ import {Component, ViewChild} from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
-import { PartialHomePage } from "../pages/partial-home/partial-home";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,11 +17,7 @@ export class MyApp {
   rootParams: any;
 
   menuItems: any[] = [
-    {
-      name: 'Full Height',
-      page: 'HomePage',
-      params: { type: 'all' }
-    },
+    
     {
       name: 'Full Height - Title only',
       page: 'HomePage',
@@ -31,21 +26,6 @@ export class MyApp {
     {
       name: 'Full height - Icons only',
       page: 'HomePage',
-      params: { type: 'icons-only' }
-    },
-    {
-      name: 'Partial Height',
-      page: 'PartialHomePage',
-      params: { type: 'all' }
-    },
-    {
-      name: 'Partial Height - Title only',
-      page: 'PartialHomePage',
-      params: { type: 'titles-only' }
-    },
-    {
-      name: 'Partial Height - Icons only',
-      page: 'PartialHomePage',
       params: { type: 'icons-only' }
     },
     {

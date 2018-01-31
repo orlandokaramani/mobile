@@ -8,20 +8,16 @@
 </ion-header>
 <ion-content no-bounce>
   <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }" scrollTabs toolbarColor="light" toolbarBackground="dark" indicatorColor="yellow" badgeColor="yellow" (tabSelect)="onTabSelect($event)">
-    <super-tab [swipeBackEnabled]="false" [root]="page1" [title]="showTitles? 'Home' : ''" [icon]="showIcons? 'home': ''" id="page1"></super-tab>
-    <super-tab [root]="page2" badge="5" [title]="showTitles? 'Trending' : ''" [icon]="showIcons? 'trending-up' : ''" id="page2"></super-tab>
-    <super-tab [root]="page3" [title]="showTitles? 'Favorites' : ''" [icon]="showIcons? 'heart' : ''" id="page3"></super-tab>
-    <super-tab [root]="page1" [title]="showTitles? 'Hot' : ''" [icon]="showIcons? 'flame': ''" id="page4"></super-tab>
-    <super-tab [root]="page2" [title]="showTitles? 'Nearby' : ''" [icon]="showIcons? 'pin' : ''" id="page5"></super-tab>
-    <super-tab [root]="page3" [title]="showTitles? 'Analytics' : ''" [icon]="showIcons? 'analytics' : ''" id="page6"></super-tab>
-
+    <super-tab [swipeBackEnabled]="false" [root]="page1" [title]="showTitles? 'Breaking' : ''" id="page1"></super-tab>
+    <super-tab [root]="page2" badge="5" [title]="showTitles? 'Politikë' : ''"  id="page2"></super-tab>
+    <super-tab [root]="page3" [title]="showTitles? 'OP-ED' : ''"  id="page3"></super-tab>
+    <super-tab [root]="page4" [title]="showTitles? 'Aktualitet' : ''" id="page4"></super-tab>
+    <super-tab [root]="page5" [title]="showTitles? 'Ekonomi' : ''"  id="page5"></super-tab>
+    <super-tab [root]="page6" [title]="showTitles? 'Kulturë' : ''"  id="page6"></super-tab>
+    <super-tab [root]="page7" [title]="showTitles? 'Gossip' : ''"  id="page7"></super-tab>
+    <super-tab [root]="page8" [title]="showTitles? 'Sport' : ''"  id="page8"></super-tab>
+    <super-tab [root]="page9" [title]="showTitles? 'Jetë' : ''"  id="page9"></super-tab>
     <!-- more tabs for testing -->
-    <super-tab [root]="page1" [title]="showTitles? 'Home' : ''" [icon]="showIcons? 'home': ''" id="page7"></super-tab>
-    <super-tab [root]="page2" [title]="showTitles? 'Trending' : ''" [icon]="showIcons? 'trending-up' : ''" id="page8"></super-tab>
-    <super-tab [root]="page3" [title]="showTitles? 'Favorites' : ''" [icon]="showIcons? 'heart' : ''" id="page9"></super-tab>
-    <super-tab [root]="page1" [title]="showTitles? 'Hot' : ''" [icon]="showIcons? 'flame': ''" id="page10"></super-tab>
-    <super-tab [root]="page2" [title]="showTitles? 'Nearby' : ''" [icon]="showIcons? 'pin' : ''" id="page11"></super-tab>
-    <super-tab [root]="page1" [title]="showTitles? 'Hot' : ''" [icon]="showIcons? 'flame': ''" id="page10"></super-tab>
-    <super-tab [root]="page3" [title]="showTitles? 'Analytics' : ''" [icon]="showIcons? 'analytics' : ''" id="page12"></super-tab>
+    
   </super-tabs>
 </ion-content>
