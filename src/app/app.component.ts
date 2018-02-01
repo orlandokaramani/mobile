@@ -1,8 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
-
-import { HomePage } from '../pages/home/home';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -38,7 +35,7 @@ export class MyApp {
     this.rootPage = this.menuItems[0].page;
     this.rootParams = this.menuItems[0].params;
     platform.ready().then(() => {
-      splashScreen.hide();
+      splashScreen.show();
       statusBar.backgroundColorByHexString('#3949AB')
     });
   }
