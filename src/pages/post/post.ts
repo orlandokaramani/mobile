@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavParams, NavController, LoadingController, AlertController } from 'ionic-angular';
 import { KreuPage } from '../kreu/kreu';
 import { WordpressService } from '../../services/wordpress.service';
