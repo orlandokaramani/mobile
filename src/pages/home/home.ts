@@ -1,8 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
-
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
- import {SuperTabsController} from "ionic2-super-tabs";
-
+import {SuperTabsController} from "ionic2-super-tabs";
 import {SuperTabs} from "ionic2-super-tabs/";
 
 @IonicPage({
@@ -30,7 +28,7 @@ export class HomePage {
   showTitles: boolean = true;
   pageTitle: string = 'Full Height';
 
-  constructor(public navCtrl: NavController, private navParams: NavParams, private superTabsCtrl: SuperTabsController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public superTabsCtrl: SuperTabsController) {
     const type = navParams.get('type');
     switch (type) {
       case 'icons-only':
@@ -46,9 +44,9 @@ export class HomePage {
   }
 
   ngAfterViewInit() {
-    // this.superTabsCtrl.increaseBadge('page1', 10);
-    // this.superTabsCtrl.enableTabSwipe('page3', false);
-    // this.superTabsCtrl.enableTabsSwipe(false);
+    this.superTabsCtrl.increaseBadge('page1', 10);
+     this.superTabsCtrl.enableTabSwipe('page3', true);
+     this.superTabsCtrl.enableTabsSwipe(true);
 
     // Test issue #122
     // setTimeout(() => {
