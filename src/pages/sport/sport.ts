@@ -4,17 +4,17 @@ import {SuperTabsController} from "ionic2-super-tabs";
 import {SuperTabs} from "ionic2-super-tabs/";
 
 @IonicPage({
-  segment: 'home/:type'
+  segment: 'sport/:type'
 })
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-sport',
+  templateUrl: 'sport.html'
 })
-export class HomePage {
+export class SportPage {
 
   @ViewChild(SuperTabs) superTabs: SuperTabs;
 
-  page1: any = 'KreuPage';
+  page1: any = 'FutbollPage';
   page2: any = 'PolitikePage';
   page3: any = 'OpedPage';
   page4: any = 'AktualitetPage';

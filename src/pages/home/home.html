@@ -3,13 +3,13 @@
     <button ion-button menuToggle color="yellow">
       <ion-icon name="menu"></ion-icon>
     </button>
-    <img alt="logo" height="40"   src="../../assets/icon/alpenews.png" > 
+    <ion-title><img alt="logo" height="40"   src="../../assets/icon/alpenews.png" > </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content no-bounce>
   <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }" scrollTabs toolbarColor="light" toolbarBackground="dark" indicatorColor="yellow" badgeColor="yellow" (tabSelect)="onTabSelect($event)">
-    <super-tab [swipeBackEnabled]="false" [root]="page1" [title]="showTitles? 'Breaking' : ''" id="page1"></super-tab>
-    <super-tab [root]="page2" badge="5" [title]="showTitles? 'Politikë' : ''"  id="page2"></super-tab>
+    <super-tab [swipeBackEnabled]="true" [root]="page1" [title]="showTitles? 'Breaking' : ''" id="page1"></super-tab>
+    <super-tab [root]="page2" [title]="showTitles? 'Politikë' : ''"  id="page2"></super-tab>
     <super-tab [root]="page3" [title]="showTitles? 'OP-ED' : ''"  id="page3"></super-tab>
     <super-tab [root]="page4" [title]="showTitles? 'Aktualitet' : ''" id="page4"></super-tab>
     <super-tab [root]="page5" [title]="showTitles? 'Ekonomi' : ''"  id="page5"></super-tab>

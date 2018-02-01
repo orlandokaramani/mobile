@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { PostPage } from '../post/post';
+import { SportpostPage } from '../sportpost/sportpost';
 import { NavController, NavParams, IonicPage, LoadingController} from 'ionic-angular';
-import { WordpressService } from '../../services/wordpress.service';
+import { SportService } from '../../services/sport.wordpress.service';
 
 @IonicPage()
 @Component({
-  selector: 'page-kreu',
-  templateUrl: 'kreu.html'
+  selector: 'page-futboll',
+  templateUrl: 'futboll.html'
 })
-export class KreuPage {
+export class FutbollPage {
   posts: Array<any> = new Array<any>();
   morePagesAvailable: boolean = true;
   categoryId: number;
@@ -19,7 +19,7 @@ export class KreuPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public loadingCtrl: LoadingController,
-    public wordpressService: WordpressService,
+    public sportService: SportService,
     
   ) {this.rootNavCtrl = navParams.get('rootNavCtrl');}
 
@@ -28,14 +28,14 @@ export class KreuPage {
     this.morePagesAvailable = true;
 
     //if we are browsing a category
-    this.categoryId = this.categoryId = 9;
+    this.categoryId = this.categoryId = 109;
     this.categoryTitle = this.navParams.get('title');
 
     if(!(this.posts.length > 0)){
       let loading = this.loadingCtrl.create();
       loading.present();
 
-      this.wordpressService.getRecentPosts(this.categoryId)
+      this.sportService.getRecentPosts(this.categoryId)
       .subscribe(data => {
         for(let post of data){
           post.excerpt.rendered = post.excerpt.rendered.split('<a')[0] + "</p>";
@@ -48,7 +48,7 @@ export class KreuPage {
   }
 
   postTapped(event, post) {
-		this.navCtrl.push(PostPage, {
+		this.navCtrl.push(SportpostPage, {
 		  item: post, event
 		});
   }
@@ -57,7 +57,7 @@ export class KreuPage {
     let page = (Math.ceil(this.posts.length/10)) + 1;
     let loading = true;
 
-    this.wordpressService.getRecentPosts(this.categoryId, page)
+    this.sportService.getRecentPosts(this.categoryId, page)
     .subscribe(data => {
       for(let post of data){
         if(!loading){
@@ -76,7 +76,7 @@ export class KreuPage {
     }).present();
   }
   goToCategoryPosts(categoryId, categoryTitle){
-    this.navCtrl.push(KreuPage, {
+    this.navCtrl.push(FutbollPage, {
       id: categoryId,
       title: categoryTitle
     })

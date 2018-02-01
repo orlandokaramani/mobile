@@ -16,19 +16,11 @@ export class MyApp {
   menuItems: any[] = [
     
     {
-      name: 'Full Height - Title only',
-      page: 'HomePage',
+      name: 'Kreu',
+      page: 'IonicTabsPage',
       params: { type: 'titles-only' }
-    },
-    {
-      name: 'Full height - Icons only',
-      page: 'HomePage',
-      params: { type: 'icons-only' }
-    },
-    {
-      name: 'Ionic tabs',
-      page: 'IonicTabsPage'
     }
+    
   ];
 
   constructor(platform: Platform, splashScreen: SplashScreen, statusBar: StatusBar) {
