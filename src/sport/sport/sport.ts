@@ -17,11 +17,11 @@ export class SportPage {
   page1: any = 'FutbollPage';
   page2: any = 'ShqiperiPage';
   page3: any = 'UefaPage';
-  page4: any = 'AktualitetPage';
-  page5: any = 'PolitikePage';
-  page6: any = 'PolitikePage';
-  page7: any = 'PolitikePage';
-  page8: any = 'PolitikePage';
+  page4: any = 'KombetarjaPage';
+  page5: any = 'AlbstarsPage';
+  page6: any = 'InternationalPage';
+  page7: any = 'SportgossipPage';
+  page8: any = 'EtjPage';
   
 
   showIcons: boolean = true;
