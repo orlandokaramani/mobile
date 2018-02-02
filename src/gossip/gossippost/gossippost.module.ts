@@ -3,9 +3,6 @@ import { IonicPageModule } from 'ionic-angular';
 import { GossippostPage } from './gossippost';
 
 @NgModule({
-  declarations: [
-    GossippostPage,
-  ],
   imports: [
     IonicPageModule.forChild(GossippostPage),
   ],
