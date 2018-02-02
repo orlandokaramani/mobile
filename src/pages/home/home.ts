@@ -18,11 +18,10 @@ export class HomePage {
   page2: any = 'PolitikePage';
   page3: any = 'OpedPage';
   page4: any = 'AktualitetPage';
-  page5: any = 'PolitikePage';
-  page6: any = 'PolitikePage';
-  page7: any = 'PolitikePage';
-  page8: any = 'PolitikePage';
-  page9: any = 'PolitikePage';
+  page5: any = 'EkonomiPage';
+  page6: any = 'KulturePage';
+  page7: any = 'JetePage';
+  
 
   showIcons: boolean = true;
   showTitles: boolean = true;
