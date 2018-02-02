@@ -1,6 +1,7 @@
-import { SportpostPage } from './../pages/sportpost/sportpost';
-
-import { PostPage } from './../pages/post/post';
+import { SportpostPage } from './../sport/sportpost/sportpost';
+import { BlogpostPage } from './../blog/blogpost/blogpost';
+import { GossippostPage } from './../gossip/gossippost/gossippost';
+import { PostPage } from './../alpenews/post/post';
 import { HttpModule } from '@angular/http';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,6 +24,8 @@ import { NativeStorage } from '@ionic-native/native-storage';
     MyApp,
     PostPage,
     SportpostPage,
+    BlogpostPage,
+    GossippostPage,
   ],
   imports: [
     BrowserModule, 
@@ -35,6 +38,9 @@ import { NativeStorage } from '@ionic-native/native-storage';
     MyApp,
     PostPage,
     SportpostPage,
+    BlogpostPage,
+    GossippostPage,
+
   ],
   providers: [
     SplashScreen,

@@ -15,14 +15,14 @@ export class SportPage {
   @ViewChild(SuperTabs) superTabs: SuperTabs;
 
   page1: any = 'FutbollPage';
-  page2: any = 'PolitikePage';
-  page3: any = 'OpedPage';
+  page2: any = 'ShqiperiPage';
+  page3: any = 'UefaPage';
   page4: any = 'AktualitetPage';
   page5: any = 'PolitikePage';
   page6: any = 'PolitikePage';
   page7: any = 'PolitikePage';
   page8: any = 'PolitikePage';
-  page9: any = 'PolitikePage';
+  
 
   showIcons: boolean = true;
   showTitles: boolean = true;
