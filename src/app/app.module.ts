@@ -22,7 +22,6 @@ import { NativeStorage } from '@ionic-native/native-storage';
   declarations: [
     MyApp,
     PostPage,
-    SportpostPage,
   ],
   imports: [
     BrowserModule, 
