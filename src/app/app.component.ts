@@ -3,6 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -28,11 +29,11 @@ export class MyApp {
     this.rootParams = this.menuItems[0].params;
     platform.ready().then(() => {
       splashScreen.show();
-      statusBar.backgroundColorByHexString('#3949AB')
-    });
+      statusBar.backgroundColorByHexString('#3949AB');
+     });
   }
-
-  openPage(page) {
+ 
+ openPage(page) {
     this.nav.setRoot(page.page, page.params);
   }
 

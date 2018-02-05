@@ -1,0 +1,22 @@
+<ion-header no-shadow no-border>
+  <ion-navbar color="light">
+    <button ion-button menuToggle color="secondary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img alt="logo" height="40"   src="../../assets/icon/gossip.png" > </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-bounce>
+  <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }" scrollTabs toolbarColor="light" toolbarBackground="danger" indicatorColor="light" badgeColor="yellow" (tabSelect)="onTabSelect($event)">
+    <super-tab [swipeBackEnabled]="true" [root]="page1" [title]="showTitles? 'Showbiz' : ''" id="page1"></super-tab>
+    <super-tab [root]="page2" [title]="showTitles? 'Histori Njerëzore' : ''"  id="page2"></super-tab>
+    <super-tab [root]="page3" [title]="showTitles? 'Këshilla' : ''"  id="page3"></super-tab>
+    <super-tab [root]="page4" [title]="showTitles? 'Modë' : ''" id="page4"></super-tab>
+    <super-tab [root]="page5" [title]="showTitles? 'Makeup' : ''"  id="page5"></super-tab>
+    <super-tab [root]="page6" [title]="showTitles? 'Do it Yourself' : ''"  id="page6"></super-tab>
+    <super-tab [root]="page7" [title]="showTitles? '+18' : ''"  id="page7"></super-tab>
+    
+    <!-- more tabs for testing -->
+    
+  </super-tabs>
+</ion-content>

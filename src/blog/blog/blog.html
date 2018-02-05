@@ -1,0 +1,16 @@
+<ion-header no-shadow no-border>
+  <ion-navbar color="light">
+    <button ion-button menuToggle color="secondary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img alt="logo" height="40"   src="../../assets/icon/blog.png" > </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-bounce>
+  <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }" scrollTabs toolbarColor="light" toolbarBackground="oliver" indicatorColor="light" badgeColor="yellow" (tabSelect)="onTabSelect($event)">
+    <super-tab [swipeBackEnabled]="true" [root]="page1" [title]="showTitles? 'Mirësevini në Blog-un e AlpeNews.al !' : ''" id="page1"></super-tab>
+    
+    <!-- more tabs for testing -->
+    
+  </super-tabs>
+</ion-content>
