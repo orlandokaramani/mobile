@@ -28,7 +28,7 @@ export class MyApp {
     this.rootPage = this.menuItems[0].page;
     this.rootParams = this.menuItems[0].params;
     platform.ready().then(() => {
-      splashScreen.show();
+      //splashScreen.show();
       statusBar.backgroundColorByHexString('#3949AB');
      });
   }

@@ -37,7 +37,6 @@
     "cordova-plugin-add-swift-support": "^1.7.1",
     "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-device": "^1.1.4",
-    "cordova-plugin-fcm": "^2.1.2",
     "cordova-plugin-ionic": "^2.0.4",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.16",
@@ -91,8 +90,7 @@
         "MAX_STORE": "2"
       },
       "onesignal-cordova-plugin": {},
-      "phonegap-plugin-push": {},
-      "cordova-plugin-fcm": {}
+      "phonegap-plugin-push": {}
     },
     "platforms": [
       "ios"
