@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, NavController, LoadingController, AlertController } from 'ionic-angular';
-import { GossipPage } from '../gossip/gossip';
+import { ShowbizPage } from '../showbiz/showbiz';
 import { GossipService } from '../../services/gossip.wordpress.service';
 import { AuthenticationService } from '../../services/authentication.service';
 import { Observable } from "rxjs/Observable";
@@ -81,7 +81,7 @@ export class GossippostPage {
   }
 
   goToCategoryPosts(categoryId, categoryTitle){
-    this.navCtrl.push(GossipPage, {
+    this.navCtrl.push(ShowbizPage, {
       id: categoryId,
       title: categoryTitle
     })

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, NavController, LoadingController, AlertController } from 'ionic-angular';
-import { SportPage } from '../sport/sport';
+import { FutbollPage } from '../futboll/futboll';
 import { SportService } from '../../services/sport.wordpress.service';
 import { AuthenticationService } from '../../services/authentication.service';
 import { Observable } from "rxjs/Observable";
@@ -81,7 +81,7 @@ export class SportpostPage {
   }
 
   goToCategoryPosts(categoryId, categoryTitle){
-    this.navCtrl.push(SportPage, {
+    this.navCtrl.push(FutbollPage, {
       id: categoryId,
       title: categoryTitle
     })

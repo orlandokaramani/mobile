@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, NavController, LoadingController, AlertController } from 'ionic-angular';
-import { BlogPage } from '../blog/blog';
+import { BlogkreuPage } from '../blogkreu/blogkreu';
 import { BlogService } from '../../services/blog.wordpress.service';
 import { AuthenticationService } from '../../services/authentication.service';
 import { Observable } from "rxjs/Observable";
@@ -81,7 +81,7 @@ export class BlogpostPage {
   }
 
   goToCategoryPosts(categoryId, categoryTitle){
-    this.navCtrl.push(BlogPage, {
+    this.navCtrl.push(BlogkreuPage, {
       id: categoryId,
       title: categoryTitle
     })
