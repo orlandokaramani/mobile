@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">814460906186-39iadgqj5nvitdonht06sn3kkf5826m0.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://alpenews-5becb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">814460906186</string>
+    <string name="google_api_key" translatable="false">AIzaSyC41PE26hip_jRix7OfDOS7oFlTvlc2i8U</string>
+    <string name="google_app_id" translatable="false">1:814460906186:android:764d2cb7da3280eb</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC41PE26hip_jRix7OfDOS7oFlTvlc2i8U</string>
+    <string name="google_storage_bucket" translatable="false">alpenews-5becb.appspot.com</string>
+    <string name="project_id" translatable="false">alpenews-5becb</string>
+</resources>
