@@ -29,19 +29,6 @@ export class MyApp {
     platform.ready().then(() => {
       splashScreen.show();
       statusBar.backgroundColorByHexString('#3949AB');
-      
-    // OneSignal Code start:
-    // Enable to debug issues:
-    window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-
-    var notificationOpenedCallback = function(jsonData) {
-      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-    };
-
-    window["plugins"].OneSignal
-      .startInit("9d3f5c20-0ebb-4321-9e22-1cf74d2409ce", "MTNkMDI2MTctNjM1Yy00YWZkLWFjODYtMTdhNmE0MzZkNGVl")
-      .handleNotificationOpened(notificationOpenedCallback)
-      .endInit();
      });
   }
  

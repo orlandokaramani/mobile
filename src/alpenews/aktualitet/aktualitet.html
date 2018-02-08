@@ -1,4 +1,7 @@
 <ion-content class="content">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
   <ion-card *ngFor="let post of posts" >
     <ion-card-content >
         <img *ngIf="post.featured_image_urls.medium" [src]="post?.featured_image_urls.medium" class="featured-image" /> 

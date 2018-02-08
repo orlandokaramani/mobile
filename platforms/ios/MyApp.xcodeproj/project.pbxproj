@@ -80,8 +80,6 @@
 		A310FCE8FD494C689F1B2984 /* UNIHTTPStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B02E272CFF48D5BA5FBBA0 /* UNIHTTPStringResponse.m */; };
 		72B2BC111C45467DA531B20A /* UNIJsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 81395B5A600343BC9A65E58C /* UNIJsonNode.m */; };
 		F09FD0FBB1AF43D2B392AFA7 /* IonicCordovaCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB981FACE80641C188AF5807 /* IonicCordovaCommon.swift */; };
-		49AF26E80CB74C6BACD7C82A /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CF52C439944053A583ABAA /* OneSignalPush.m */; };
-		3F85142653FA44CDBA9E9B55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B915803DAE9425F9145CC1C /* SystemConfiguration.framework */; };
 		83B800BCF12246DC82DE375F /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DCBE6C271436B90ECA774 /* AppDelegate+notification.m */; };
 		D778DE573F4043ECB290060B /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE654CA53354AF8B8058335 /* PushPlugin.m */; };
 /* End PBXBuildFile section */
@@ -250,9 +248,6 @@
 		D2DB79BE1B69401EAF805ABA /* UNIHTTPResponse.h */ = {isa = PBXFileReference; name = "UNIHTTPResponse.h"; path = "cordova-plugin-ionic/UNIHTTPResponse.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		2A62429B348B42278F2E7D11 /* UNIHTTPStringResponse.h */ = {isa = PBXFileReference; name = "UNIHTTPStringResponse.h"; path = "cordova-plugin-ionic/UNIHTTPStringResponse.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		6F37D7DC9B37451488211B6B /* UNIJsonNode.h */ = {isa = PBXFileReference; name = "UNIJsonNode.h"; path = "cordova-plugin-ionic/UNIJsonNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		D8CF52C439944053A583ABAA /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		95D2BE17BB2540D581E01F00 /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		6B915803DAE9425F9145CC1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		819DCBE6C271436B90ECA774 /* AppDelegate+notification.m */ = {isa = PBXFileReference; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		3BE654CA53354AF8B8058335 /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		81E413BC701E4F959F0F3E16 /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
@@ -267,7 +262,6 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				6A0DD37F98D846F698171A49 /* WebKit.framework in Frameworks */,
 				09EDBBDFB007484DAAC35F0A /* libz.tbd in Frameworks */,
-				3F85142653FA44CDBA9E9B55 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +334,6 @@
 			children = (
 				1FBE37D570A7484088A62236 /* WebKit.framework */,
 				5BA8E3A3717444758CD20D55 /* libz.tbd */,
-				6B915803DAE9425F9145CC1C /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -490,8 +483,6 @@
 				D2DB79BE1B69401EAF805ABA /* UNIHTTPResponse.h */,
 				2A62429B348B42278F2E7D11 /* UNIHTTPStringResponse.h */,
 				6F37D7DC9B37451488211B6B /* UNIJsonNode.h */,
-				D8CF52C439944053A583ABAA /* OneSignalPush.m */,
-				95D2BE17BB2540D581E01F00 /* OneSignalPush.h */,
 				819DCBE6C271436B90ECA774 /* AppDelegate+notification.m */,
 				3BE654CA53354AF8B8058335 /* PushPlugin.m */,
 				81E413BC701E4F959F0F3E16 /* AppDelegate+notification.h */,
@@ -670,7 +661,6 @@
 				A310FCE8FD494C689F1B2984 /* UNIHTTPStringResponse.m in Sources */,
 				72B2BC111C45467DA531B20A /* UNIJsonNode.m in Sources */,
 				F09FD0FBB1AF43D2B392AFA7 /* IonicCordovaCommon.swift in Sources */,
-				49AF26E80CB74C6BACD7C82A /* OneSignalPush.m in Sources */,
 				83B800BCF12246DC82DE375F /* AppDelegate+notification.m in Sources */,
 				D778DE573F4043ECB290060B /* PushPlugin.m in Sources */,
 			);

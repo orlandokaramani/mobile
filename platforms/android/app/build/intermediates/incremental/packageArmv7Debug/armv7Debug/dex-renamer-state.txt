@@ -1,0 +1,4 @@
+#Wed Feb 07 14:47:34 CET 2018
+base.0=C\:\\Users\\orland.karamani\\Desktop\\app\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\armv7\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

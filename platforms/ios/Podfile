@@ -2,6 +2,5 @@
 platform :ios, '8.0'
 target 'C:\Users\orland.karamani\Desktop\app\mobile\platforms\ios\MyApp' do
 	project 'C:\Users\orland.karamani\Desktop\app\mobile\platforms\ios\MyApp.xcodeproj'
-	pod 'OneSignal', '2.6.0'
 	pod 'FirebaseMessaging', '~> 2.0.0'
 end

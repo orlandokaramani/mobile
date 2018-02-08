@@ -49,9 +49,6 @@
     <feature name="IonicCordovaCommon">
         <param name="ios-package" onload="true" value="IonicCordovaCommon" />
     </feature>
-    <feature name="OneSignalPush">
-        <param name="ios-package" value="OneSignalPush" />
-    </feature>
     <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin" />
     </feature>

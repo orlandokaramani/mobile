@@ -58,14 +58,6 @@ module.exports = [
     "clobbers": [
       "window.StatusBar"
     ]
-  },
-  {
-    "id": "onesignal-cordova-plugin.OneSignal",
-    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-    "pluginId": "onesignal-cordova-plugin",
-    "clobbers": [
-      "OneSignal"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -73,6 +65,7 @@ module.exports.metadata =
 {
   "cordova-plugin-add-swift-support": "1.7.1",
   "cordova-plugin-console": "1.1.0",
+  "cordova-plugin-crosswalk-webview": "2.4.0",
   "cordova-plugin-device": "1.1.4",
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-ionic": "2.0.4",
@@ -80,8 +73,7 @@ module.exports.metadata =
   "cordova-plugin-ionic-webview": "1.1.16",
   "cordova-plugin-nativestorage": "2.2.2",
   "cordova-plugin-statusbar": "2.4.1",
-  "cordova-plugin-whitelist": "1.3.1",
-  "onesignal-cordova-plugin": "2.2.5"
+  "cordova-plugin-whitelist": "1.3.1"
 };
 // BOTTOM OF METADATA
 });

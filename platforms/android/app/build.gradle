@@ -1,4 +1,3 @@
-
 /*
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
@@ -31,7 +30,6 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-
     }
 }
 
@@ -93,7 +91,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../onesignal-cordova-plugin/starter-build-extras-onesignal.gradle"
+apply from: "../cordova-plugin-crosswalk-webview/starter-xwalk.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -171,7 +169,7 @@ android {
     }
 
     lintOptions {
-        abortOnError false;
+      abortOnError false;
     }
 
     compileSdkVersion cdvCompileSdkVersion
@@ -187,31 +185,31 @@ android {
 
         productFlavors {
             armeabi {
-                versionCode defaultConfig.versionCode * 10 + 1
+                versionCode defaultConfig.versionCode*10 + 1
                 ndk {
                     abiFilters = ["armeabi"]
                 }
             }
             armv7 {
-                versionCode defaultConfig.versionCode * 10 + 2
+                versionCode defaultConfig.versionCode*10 + 2
                 ndk {
                     abiFilters = ["armeabi-v7a"]
                 }
             }
             arm64 {
-                versionCode defaultConfig.versionCode * 10 + 3
+                versionCode defaultConfig.versionCode*10 + 3
                 ndk {
                     abiFilters = ["arm64-v8a"]
                 }
             }
             x86 {
-                versionCode defaultConfig.versionCode * 10 + 4
+                versionCode defaultConfig.versionCode*10 + 4
                 ndk {
                     abiFilters = ["x86"]
                 }
             }
             x86_64 {
-                versionCode defaultConfig.versionCode * 10 + 5
+                versionCode defaultConfig.versionCode*10 + 5
                 ndk {
                     abiFilters = ["x86_64"]
                 }
@@ -220,7 +218,7 @@ android {
     } else if (Boolean.valueOf(cdvVersionCodeForceAbiDigit)) {
         // This provides compatibility to the default logic for versionCode before cordova-android 5.2.0
         defaultConfig {
-            versionCode defaultConfig.versionCode * 10
+            versionCode defaultConfig.versionCode*10
         }
     }
 
@@ -234,8 +232,7 @@ android {
             release {
                 // These must be set or Gradle will complain (even if they are overridden).
                 keyAlias = ""
-                keyPassword = "__unset"
-                // And these must be set to non-empty in order to have the signing step added to the task graph.
+                keyPassword = "__unset" // And these must be set to non-empty in order to have the signing step added to the task graph.
                 storeFile = null
                 storePassword = "__unset"
             }
@@ -263,7 +260,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    compile "com.onesignal:OneSignal:3.7.1"
     // SUB-PROJECT DEPENDENCIES END
 }
 
@@ -281,9 +277,9 @@ def promptForReleaseKeyPassword() {
 
 gradle.taskGraph.whenReady { taskGraph ->
     taskGraph.getAllTasks().each() { task ->
-        if (['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX76Release'].contains(task.name)) {
-            promptForReleaseKeyPassword()
-        }
+      if(['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX76Release'].contains(task.name)) {
+         promptForReleaseKeyPassword()
+      }
     }
 }
 
@@ -326,5 +322,3 @@ for (def func : cdvPluginPostBuildExtras) {
 if (hasProperty('postBuildExtras')) {
     postBuildExtras()
 }
-
-apply plugin: 'com.google.gms.google-services'

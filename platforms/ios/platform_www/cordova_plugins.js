@@ -77,14 +77,6 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "onesignal-cordova-plugin.OneSignal",
-    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-    "pluginId": "onesignal-cordova-plugin",
-    "clobbers": [
-      "OneSignal"
-    ]
-  },
-  {
     "id": "phonegap-plugin-push.PushNotification",
     "file": "plugins/phonegap-plugin-push/www/push.js",
     "pluginId": "phonegap-plugin-push",
@@ -106,8 +98,8 @@ module.exports.metadata =
   "ionic-plugin-keyboard": "2.2.1",
   "cordova-plugin-add-swift-support": "1.7.1",
   "cordova-plugin-ionic": "2.0.4",
-  "onesignal-cordova-plugin": "2.2.5",
-  "phonegap-plugin-push": "2.1.3"
+  "phonegap-plugin-push": "2.1.3",
+  "cordova-plugin-crosswalk-webview": "2.4.0"
 };
 // BOTTOM OF METADATA
 });
